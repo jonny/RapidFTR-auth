@@ -1,4 +1,7 @@
 class ChildrenController < ApplicationController
+  
+  before_filter :login_required
+  
   # GET /children
   # GET /children.xml
   def index
